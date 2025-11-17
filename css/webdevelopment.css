@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #111;
+}
+
+/* =============== NAVBAR =============== */
+.navbar {
+    width: 100%;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.enquiry-btn {
+    padding: 10px 22px;
+    background: #0066ff;
+    color: #fff !important;
+    border-radius: 8px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    width: 30px;
+    height: 23px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background: #111;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+/* Section Overall */
+.web-dev-section {
+    padding: 80px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Container */
+.wd-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* ---------------------- */
+/* LEFT TEXT BLOCK */
+/* ---------------------- */
+.wd-text {
+    flex: 1.2;
+}
+
+.wd-text h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.wd-text h2 span {
+    color: #0a58ff;
+}
+
+.wd-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+/* ---------------------- */
+/* RIGHT IMAGE */
+/* ---------------------- */
+.wd-image {
+    flex: 1;
+    text-align: right;
+}
+
+.wd-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+/* ---------------------- */
+/* STAGE CARDS */
+/* ---------------------- */
+.stages-row {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.stage-card {
+    width: 230px;
+    padding: 35px 20px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+}
+
+.stage-card:hover {
+    transform: translateY(-5px);
+}
+
+.stage-card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+}
+
+.stage-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #333;
+}
+
+/* ---------------------- */
+/* RESPONSIVENESS */
+/* ---------------------- */
+
+@media (max-width: 1000px) {
+    .wd-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .wd-image {
+        text-align: center;
+    }
+
+    .stages-row {
+        justify-content: center;
+    }
+}
+
+.static-website-section {
+    padding: 80px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* MAIN FLEX CONTAINER */
+.static-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LEFT TEXT */
+.static-text {
+    flex: 1.2;
+}
+
+.static-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.static-text h2 span {
+    color: #0a58ff;   /* Blue highlight like screenshot */
+}
+
+.static-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000;
+    max-width: 650px;
+}
+
+/* RIGHT IMAGE */
+.static-image {
+    flex: 1;
+    text-align: right;
+}
+
+.static-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .static-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .static-image {
+        text-align: center;
+    }
+}
+
+.dynamic-website-section {
+    padding: 80px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* FLEX LAYOUT */
+.dynamic-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* LEFT IMAGE */
+.dynamic-image {
+    flex: 1.2;
+}
+
+.dynamic-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+/* RIGHT TEXT */
+.dynamic-text {
+    flex: 1;
+}
+
+.dynamic-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.dynamic-text h2 span {
+    color: #0a58ff;   /* same blue highlight */
+}
+
+.dynamic-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #000;
+    max-width: 680px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .dynamic-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dynamic-image img {
+        max-width: 400px;
+    }
+}
+
+.ecommerce-section {
+    padding: 80px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* FLEX wrapper */
+.ecommerce-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* LEFT TEXT */
+.ecommerce-text {
+    flex: 1;
+}
+
+.ecommerce-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.ecommerce-text h2 span {
+    color: #0a58ff;   /* blue highlight */
+}
+
+.ecommerce-text p {
+    font-size: 20px;
+    line-height: 1.9;
+    color: #000;
+    max-width: 750px;
+}
+
+/* RIGHT IMAGE */
+.ecommerce-image {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+}
+
+.ecommerce-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .ecommerce-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ecommerce-image img {
+        max-width: 400px;
+    }
+}
+
+/* Footer Background */
+.footer {
+    background: #0057ff;
+    color: white;
+    padding: 60px 40px;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout */
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Sections */
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Brand area */
+.brand .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+/* Social icons */
+.social a {
+    font-size: 26px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ------------------- */
+/*     MEDIA QUERY     */
+/* ------------------- */
+
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .brand h2 {
+        text-align: center;
+    }
+}

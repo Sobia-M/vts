@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Company Hero Section</title>
+    <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="logo">
+           <a href="index.html"> <img src="images/logo.webp" alt="Company Logo"></a>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="about.html">About Us</a>
+            <a href="webdevelopment.html">Web Development</a>
+            <a href="#">Software Development</a>
+            <a href="#">Digital Marketing</a>
+            <a href="#" class="enquiry-btn">Enquiry</a>
+        </nav>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+
+    <section class="about-section">
+    <div class="about-container">
+
+        <!-- LEFT CONTENT -->
+        <div class="about-text">
+            <h2><span>About</span> Us</h2>
+
+            <p>
+                Vetri IT Systems is a dynamic IT solutions provider, specializing in 
+                cutting-edge technology services. We deliver innovative software 
+                development, IT consulting, and digital transformation solutions 
+                tailored to meet diverse business needs. Committed to excellence, 
+                we empower organizations with reliable, scalable, and cost-effective 
+                technology solutions.
+            </p>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="about-image">
+            <img src="images/VIS About us-hl3nVpCm.webp" alt="Team Illustration">
+        </div>
+
+    </div>
+</section>
+
+<section class="vision-mission-section">
+
+    <div class="vm-container">
+
+        <!-- Vision Card -->
+        <div class="vm-box">
+            <div class="vm-icon">
+                <img src="images/VIS Vision-CIQsaNn3.webp" alt="Vision Icon">
+            </div>
+
+            <h2>Our <span>Vision</span></h2>
+
+            <p>
+                To be a globally recognized leader in delivering innovative IT solutions that 
+                transform businesses and create a sustainable impact. We envision a future 
+                where technology seamlessly empowers organizations to achieve their goals, 
+                enhance customer experiences, and drive growth. By staying ahead of emerging 
+                trends and fostering creativity, we aim to set new benchmarks in the IT industry, 
+                contributing to a digitally connected and efficient world.
+            </p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="vm-box">
+            <div class="vm-icon">
+                <img src="images/VIS mission-CURbG5kn.webp" alt="Mission Icon">
+            </div>
+
+            <h2>Our <span>Mission</span></h2>
+
+            <p>
+                At Vetri IT Systems, our mission is to harness the power of technology to enable 
+                businesses to unlock their full potential. We are committed to providing tailored, 
+                cutting-edge solutions that address complex challenges, streamline operations, 
+                and enhance productivity. By prioritizing quality, collaboration, and customer 
+                satisfaction, we strive to build long-lasting partnerships based on trust and 
+                innovation. Our dedication extends to nurturing talent, embracing diversity, and 
+                fostering a culture of continuous learning and improvement to deliver excellence 
+                at every step.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo + Company -->
+        <div class="footer-section brand">
+            <img src="images/logo.webp" alt="Vetri IT Systems Logo" class="logo">
+            <h2>Vetri<br>IT Systems</h2>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="webdevelopment.html">Web Development</a></li>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-section">
+            <h3>Contact Details</h3>
+            <p>📞 8438558627, 8438558527</p>
+            <p>✉️ business@vetriit.com</p>
+            <p>📍 VTS & VIS, April’s Complex,<br>
+            Shanthi Complex, Surandai.</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social">
+                <a href="#">📷</a>
+                <a href="#">in</a>
+                <a href="#">f</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+    <script>
+        // Toggle Hamburger Menu
+        const hamburger = document.getElementById("hamburger");
+        const navLinks = document.getElementById("navLinks");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            hamburger.classList.toggle("open");
+        });
+    </script>
+
+</body>
+</html>
